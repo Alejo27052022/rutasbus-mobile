@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "259031375327",
+    "project_id": "appmapturistic-74b56",
+    "storage_bucket": "appmapturistic-74b56.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259031375327:android:24c3c0a1d550b83009f86a",
+        "android_client_info": {
+          "package_name": "com.example.mapturistic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8zhlO0ESo53v_dB9iyfADhVjao1IaknU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259031375327:android:db8f1681e2213f9c09f86a",
+        "android_client_info": {
+          "package_name": "com.example.rutasbus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8zhlO0ESo53v_dB9iyfADhVjao1IaknU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">RutasBus</string>
+    <string name="pantallainfo1">
+        Encuentra las rutas más cercanas de buses, horarios y mucho más
+    </string>
+    <string name="pantallainfo2">
+        Aquí puedes ver la ubicación exacta de las paradas, el número de ruta y el tiempo estimado de llegada
+    </string>
+    <string name="title">
+        Sistema de Rutas
+    </string>
+    <string name="infologin">
+        Ingresa tus credenciales para acceder
+    </string>
+    <string name="infopass">
+        Registrate para tener acceso a las rutas de los Buses
+    </string>
+    <string name="label_correo">
+        Correo electrónico
+    </string>
+    <string name="label_pass">
+        Contraseña
+    </string>
+    <string name="label_iniciar">
+        Iniciar Sesión
+    </string>
+    <string name="btn_register">
+        Registrar
+    </string>
+    <string name="label_no_cuenta">
+        ¿No tienes cuenta?
+    </string>
+    <string name="label_register">
+        Regístrate aquí
+    </string>
+    <string name="label_si_cuenta">
+        ¿Ya tienes cuenta?
+    </string>
+    <string name="label_login">
+        Inicia sesión aquí
+    </string>
+
+    <!-- MENU -->
+    <string name="sectionone">Inicio</string>
+    <string name="sectiontwo">Rutas</string>
+
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Map Turistic</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_maps">Maps</string>
+    <string name="menu_turismo">Lugares Turìsticos</string>
+</resources>
