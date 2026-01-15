@@ -36,7 +36,7 @@ class Inicio : AppCompatActivity() {
         }
     }
 
-    // Método para cargar un fragment en el contenedor
+    // Carga el fragment en el contenedor
     private fun loadFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
