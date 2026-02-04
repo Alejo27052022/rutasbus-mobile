@@ -104,13 +104,13 @@ class MapsFragment : Fragment() {
                     ContextCompat.getColor(requireContext(), R.color.route_gray),
                 )
 
-                // ✅ Primero: carga restaurantes (si quieres que siempre estén)
+                // Carga restaurantes (si quieres que siempre estén)
                 cargarRestaurantes(db, iconoRestaurante)
 
-                // ✅ Segundo: cargar lineas en Spinner (SIN dibujar rutas aún)
+                // Cargar lineas en Spinner (SIN dibujar rutas aún)
                 cargarLineasEnSpinner(db)
 
-                // ✅ Botón mostrar: limpia y dibuja solo la seleccionada
+                // Limpia y dibuja solo la seleccionada
                 binding.btnMostrar.setOnClickListener {
                     val nombreSeleccionado = binding.spinnerLineas.selectedItem?.toString()
                         ?: return@setOnClickListener
