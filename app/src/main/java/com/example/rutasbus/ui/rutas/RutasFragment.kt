@@ -16,6 +16,7 @@ class RutasFragment : Fragment() {
 
     private var _binding: FragmentTurismoBinding? = null
     private val binding get() = _binding!!
+
     private val items = mutableListOf<RutaBus>()
     private lateinit var adapter: BusAdapter
 
@@ -24,35 +25,37 @@ class RutasFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentTurismoBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        // RecyclerView
-        adapter = BusAdapter(items)
+        _binding = FragmentTurismoBinding.inflate(inflater, container, false)
+
+        adapter = BusAdapter(items) { rutaSeleccionada ->
+            Toast.makeText(
+                requireContext(),
+                "Ruta seleccionada: ${rutaSeleccionada.nombre}",
+                Toast.LENGTH_SHORT
+            ).show()
+
+        }
+
         binding.recyclerTurismo.layoutManager = GridLayoutManager(context, 2)
         binding.recyclerTurismo.adapter = adapter
 
-        // Lee datos de Firestore
-        val db = FirebaseFirestore.getInstance()
-        db.collection("rutas")
+        FirebaseFirestore.getInstance()
+            .collection("lineas")
             .get()
             .addOnSuccessListener { result ->
                 items.clear()
                 for (document in result) {
-                    val item = RutaBus(
-                        nombre = document.getString("nombre") ?: "",
-                        descripcion = document.getString("descripcion") ?: "",
-                        imagen = document.getString("imagen") ?: "",
-                    )
-                    items.add(item)
+                    val ruta = document.toObject(RutaBus::class.java)
+                    if (ruta != null) items.add(ruta)
                 }
                 adapter.notifyDataSetChanged()
             }
             .addOnFailureListener { e ->
-                Toast.makeText(context, "Error al cargar rutas: ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Error al cargar líneas: ${e.message}", Toast.LENGTH_SHORT).show()
             }
 
-        return root
+        return binding.root
     }
 
     override fun onDestroyView() {
@@ -60,3 +63,4 @@ class RutasFragment : Fragment() {
         _binding = null
     }
 }
+

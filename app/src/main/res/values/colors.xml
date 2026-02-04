@@ -23,4 +23,17 @@
     <!-- Colores para Marcadores -->
     <color name="marker_ruta">#48b564</color> <!-- Verde para rutas -->
     <color name="marker_restaurante">#ed5748</color> <!-- Rojo para restaurantes -->
+
+    <!-- Paleta para líneas de bus (polylines) -->
+    <color name="route_blue">#1E88E5</color>
+    <color name="route_green">#43A047</color>
+    <color name="route_orange">#FB8C00</color>
+    <color name="route_red">#E53935</color>
+    <color name="route_purple">#8E24AA</color>
+    <color name="route_teal">#00897B</color>
+    <color name="route_indigo">#3949AB</color>
+    <color name="route_brown">#6D4C41</color>
+    <color name="route_pink">#D81B60</color>
+    <color name="route_gray">#546E7A</color>
+
 </resources>
